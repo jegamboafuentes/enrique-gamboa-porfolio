@@ -47,6 +47,9 @@ async function startServer() {
         
         const linkMatch = /<link>(.*?)<\/link>/.exec(itemContent);
         const link = linkMatch ? linkMatch[1] : "";
+
+        const pubDateMatch = /<pubDate>(.*?)<\/pubDate>/.exec(itemContent);
+        const pubDate = pubDateMatch ? pubDateMatch[1] : "No date found";
         
         const categories: string[] = [];
         const categoryRegex = /<category><!\[CDATA\[(.*?)\]\]><\/category>|<category>(.*?)<\/category>/g;
@@ -61,7 +64,8 @@ async function startServer() {
           description,
           mainImage,
           link,
-          categories
+          categories,
+          pubDate
         });
       }
       

@@ -63,8 +63,9 @@ export function GitHubSection() {
              <div className="flex justify-between items-start mb-3">
                <h3 className="text-xl font-bold text-blue-400 break-all">{repo.name}</h3>
                <div className="flex gap-3 shrink-0 ml-4">
-                 <a href={repo.html_url} target="_blank" rel="noreferrer" title="Source Code" className="text-green-600 hover:text-white transition-colors">
-                   <Code className="w-5 h-5" />
+                 <a href={repo.html_url} target="_blank" rel="noreferrer" title="Source Code" className="flex items-center gap-2 text-green-600 hover:text-white transition-colors text-sm font-bold">
+                   <Code className="w-4 h-4" />
+                   SEE CODE
                  </a>
                </div>
              </div>

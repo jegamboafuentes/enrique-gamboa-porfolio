@@ -66,6 +66,9 @@ export function ProjectsSection() {
                   ))}
                 </div>
               )}
+              {article.pubDate && (
+                <p className="text-xs text-green-700 mb-4">{new Date(article.pubDate).toLocaleDateString()}</p>
+              )}
               <p className="text-sm text-green-500/80 flex-1 leading-relaxed">{article.description}</p>
               <div className="mt-6 pt-4 border-t border-green-900/50">
                 {article.link ? (

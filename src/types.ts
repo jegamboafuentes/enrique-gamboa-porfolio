@@ -17,4 +17,5 @@ export interface MediumArticle {
   mainImage: string | null;
   link: string;
   categories?: string[];
+  pubDate: string;
 }
