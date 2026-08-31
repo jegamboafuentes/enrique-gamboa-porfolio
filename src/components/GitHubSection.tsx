@@ -52,9 +52,16 @@ export function GitHubSection() {
          </div>
        )}
 
-       <div className="mb-8 overflow-x-auto border border-green-900 p-4 bg-green-950/10 hide-scrollbar">
+       <div className="mb-8 border border-green-900 p-4 bg-green-950/10">
          <h3 className="text-sm font-bold text-green-400 mb-4">Contribution Activity</h3>
-         <img src="https://ghchart.rshah.org/4ade80/jegamboafuentes" alt="GitHub Contributions Graph" className="min-w-[700px] opacity-80 hover:opacity-100 transition-opacity" />
+         <div className="w-full overflow-x-auto pb-2 hide-scrollbar" dir="rtl">
+           <img 
+             src="https://ghchart.rshah.org/4ade80/jegamboafuentes" 
+             alt="GitHub Contributions Graph" 
+             className="w-full min-w-[550px] md:min-w-[700px] opacity-80 hover:opacity-100 transition-opacity" 
+             dir="ltr"
+           />
+         </div>
        </div>
 
        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">

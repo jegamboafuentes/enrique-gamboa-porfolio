@@ -35,7 +35,7 @@ export function ResumeSection() {
         
         <div className="shrink-0">
           <img 
-            src="https://media.licdn.com/dms/image/v2/D5603AQH0wdV3-XG7Fg/profile-displayphoto-scale_400_400/B56Z8FaRtIIgAg-/0/1782502203176?e=1787788800&v=beta&t=ElTfW-9cnVzgjEcnZ2WZgFWf4gFBinpYzbeZ8h-JAKs" 
+            src="/IMG_6121.jpg" 
             alt="Jorge Enrique Gamboa Fuentes" 
             className="w-48 h-48 object-cover rounded-tl-3xl rounded-br-3xl rounded-tr-md rounded-bl-md border-2 border-green-500 p-1 shadow-[0_0_15px_rgba(34,197,94,0.3)] grayscale hover:grayscale-0 transition-all duration-500"
           />
